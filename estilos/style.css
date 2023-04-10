@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion';
+    src: url(../fontes/PassionOne-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../fontes/Sriracha-Regular.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    padding-bottom: 50px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 144px;
+    padding: 50px 0px 0px 0px;
+    font-family: 'Passion', verdana, helvetica, cursive;
+}
+
+header > p {
+    color: #fff;
+    font-family: verdana, helvetica, cursive;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    font-family: 'Sriracha', verdana, helvetica, cursive;
+    font-size: 50px;
+    padding: 80px 0 100px 30px;
+    width: 600px;
+}
+
+article > p {
+    position: absolute;
+    color: #fff;
+    font-family: 'Sriracha', verdana, helvetica, cursive;
+    font-size: 50px;
+    background-color: #000000a1;
+    padding: 20px 5px;
+    margin: 80px 30px;
+    background-position: left center;
+}
+
+#flores {
+    background-image: url(../imagens/flores.jpg);
+    height: 110vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#cartas {
+    background-image: url(../imagens/escrita.jpg);
+    height: 110vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+footer p {
+    padding: 10px;
+    font-size: 20px;
+}

@@ -10,9 +10,21 @@
     src: url(../fontes/Sriracha-Regular.ttf) format(truetype);
 }
 
+:root {
+    --fontpadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fontdestaque: 'Passion', cursive;
+    --fontverso: 'Sriracha', cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--fontpadrao);
 }
 
 body {
@@ -25,23 +37,24 @@ header {
     padding-bottom: 50px;
 }
 
-h1 {
+header > h1 {
     color: #fff;
     text-align: center;
-    font-size: 144px;
     padding: 50px 0px 0px 0px;
-    font-family: 'Passion', verdana, helvetica, cursive;
-}
+    font-family: var(--fontdestaque);
+    font-size: 10vw;
+    font-variant: small-caps;
+}   
 
 header > p {
+    padding-bottom: 50px;
     color: #fff;
-    font-family: verdana, helvetica, cursive;
     text-align: center;
 }
 
 a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
     color: #fff;
 }
 
@@ -49,49 +62,34 @@ a:hover {
     text-decoration: underline;
 }
 
-main p {
-    font-family: 'Sriracha', verdana, helvetica, cursive;
-    font-size: 50px;
-    padding: 80px 0 100px 30px;
-    width: 600px;
+section {
+    padding: 10vh 0 10vh 30px;
+    line-height: 2em;
+    font-family: var(--fontverso);
+    font-size: 3.5vw;
 }
 
-article > p {
-    position: absolute;
+section.normal {
+    background-color: #fff;
+    color: #000;
+}
+
+section.imagem {
+    background-color: #1b1b1b;
     color: #fff;
-    font-family: 'Sriracha', verdana, helvetica, cursive;
-    font-size: 50px;
-    background-color: #000000a1;
-    padding: 20px 5px;
-    margin: 80px 30px;
-    background-position: left center;
+
+
 }
 
-#flores {
-    background-image: url(../imagens/flores.jpg);
-    height: 110vh;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-}
-
-#cartas {
-    background-image: url(../imagens/escrita.jpg);
-    height: 110vh;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 5px;
+    display: inline-block;
 }
 
 footer {
     text-align: center;
     background-color: #000;
     color: #fff;
-}
-
-footer p {
     padding: 10px;
-    font-size: 20px;
 }
